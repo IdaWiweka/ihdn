@@ -1,5 +1,5 @@
-title: IHDN Website
-description: A collaborative website for IHDN
+title: IHDN R Tutorials
+description: A collaborative website for IHDN with R programming tutorials
 baseurl: "/ihdn"
 url: "https://idawiweka.github.io"
 
@@ -9,6 +9,9 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-remote-theme
+  - jekyll-syntax-highlighting
+  - jekyll-relative-links
+  - jekyll-sitemap
 
 # Theme settings
 remote_theme: jekyll/minima
@@ -18,6 +21,9 @@ collections:
   tutorials:
     output: true
     permalink: /tutorials/:name/
+  datasets:
+    output: true
+    permalink: /datasets/:name/
 
 # Default front matter
 defaults:
@@ -26,10 +32,33 @@ defaults:
       type: "tutorials"
     values:
       layout: "tutorial"
+      author: "IHDN Team"
+  - scope:
+      path: ""
+      type: "datasets"
+    values:
+      layout: "dataset"
   - scope:
       path: ""
     values:
       layout: "default"
+
+# R-specific settings
+r_highlight:
+  theme: default
+  line_numbers: true
+  start_line: 1
+
+# Navigation
+nav_items:
+  - title: Home
+    url: /
+  - title: Tutorials
+    url: /tutorials/
+  - title: Datasets
+    url: /datasets/
+  - title: About
+    url: /about/
 
 # Exclude files from processing
 exclude:
@@ -37,4 +66,5 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
-  - .gitignore 
+  - .gitignore
+  - .github 
