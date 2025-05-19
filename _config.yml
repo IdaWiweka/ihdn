@@ -1,0 +1,40 @@
+title: IHDN Website
+description: A collaborative website for IHDN
+baseurl: "/ihdn"
+url: "https://idawiweka.github.io"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+
+# Theme settings
+remote_theme: jekyll/minima
+
+# Collections
+collections:
+  tutorials:
+    output: true
+    permalink: /tutorials/:name/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "tutorials"
+    values:
+      layout: "tutorial"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore 
