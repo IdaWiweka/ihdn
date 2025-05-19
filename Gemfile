@@ -8,7 +8,6 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-seo-tag", "~> 2.8"
   gem "jekyll-remote-theme", "~> 0.4.3"
-  gem "jekyll-syntax-highlighting", "~> 0.1.0"
   gem "jekyll-relative-links", "~> 0.6.1"
   gem "jekyll-sitemap", "~> 1.4.0"
 end

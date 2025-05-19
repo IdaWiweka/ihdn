@@ -9,7 +9,6 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-remote-theme
-  - jekyll-syntax-highlighting
   - jekyll-relative-links
   - jekyll-sitemap
 
@@ -43,11 +42,17 @@ defaults:
     values:
       layout: "default"
 
-# R-specific settings
-r_highlight:
-  theme: default
-  line_numbers: true
-  start_line: 1
+# Syntax highlighting
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+    span:
+      line_numbers: false
+    default_lang: r
 
 # Navigation
 nav_items:
