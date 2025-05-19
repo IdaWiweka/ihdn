@@ -19,7 +19,7 @@ remote_theme: jekyll/minima
 collections:
   tutorials:
     output: true
-    permalink: /ihdn/tutorials/:name/
+    permalink: /ihdn/tutorials/:name
   datasets:
     output: true
     permalink: /ihdn/datasets/:name/
