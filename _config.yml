@@ -19,10 +19,10 @@ remote_theme: jekyll/minima
 collections:
   tutorials:
     output: true
-    permalink: /tutorials/:name/
+    permalink: /ihdn/tutorials/:name/
   datasets:
     output: true
-    permalink: /datasets/:name/
+    permalink: /ihdn/datasets/:name/
 
 # Default front matter
 defaults:
@@ -57,13 +57,13 @@ kramdown:
 # Navigation
 nav_items:
   - title: Home
-    url: /
+    url: /ihdn/
   - title: Tutorials
-    url: /tutorials/
+    url: /ihdn/tutorials/
   - title: Datasets
-    url: /datasets/
+    url: /ihdn/datasets/
   - title: About
-    url: /about/
+    url: /ihdn/about/
 
 # Exclude files from processing
 exclude:
