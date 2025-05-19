@@ -51,3 +51,7 @@ In the next tutorial, we'll cover:
 - Statistical analysis
 - Data visualization
 - Creating reports 
+
+[Introduction to R Programming]({{ site.baseurl }}/tutorials/r-introduction)
+[Data Visualization in R]({{ site.baseurl }}/tutorials/r-data-visualization)
+[Sample Health Dataset]({{ site.baseurl }}/datasets/sample-data) 
